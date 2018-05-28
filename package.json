@@ -1,0 +1,40 @@
+{
+  "name": "storybook-addon-mst",
+  "version": "0.0.2",
+  "description": "Storybook addon for using mobx state tree in your stories",
+  "main": "dist/index",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "node node_modules/typescript/bin/tsc",
+    "storybook-react": "start-storybook -p 9001 -c examples/react/.storybook",
+    "test": "jest",
+    "watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@storybook/addon-knobs": "^3.4.1",
+    "@storybook/addons": "^3.4.1",
+    "@storybook/react": "^3.4.1",
+    "@types/events": "^1.2.0",
+    "@types/jest": "^22.2.3",
+    "@types/json-schema": "^6.0.1",
+    "@types/storybook__react": "^3.0.7",
+    "awesome-typescript-loader": "4",
+    "babel-core": "^6.26.3",
+    "jest": "^23.0.0",
+    "jest-junit": "^4.0.0",
+    "mobx": "^4.3.0",
+    "mobx-state-tree": "^2.0.3",
+    "react": "*",
+    "react-dom": "^16.4.0",
+    "strip-ansi": "^4.0.0",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-loader": "^3.6.0",
+    "typescript": "2.8.3"
+  },
+  "dependencies": {
+    "@json-editor/json-editor": "^1.0.0",
+    "mobx-react": "^5.1.2"
+  },
+  "peerDependencies": {}
+}
